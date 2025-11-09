@@ -1,0 +1,112 @@
+gi* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #f8eeee;
+    color: #000000;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+header {
+    background-color: #e76dd3;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+
+
+}
+
+
+nav {
+    background-color: #e6b4c9;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.dest {
+    background-image: url("../images/Agropecuaria .png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+section {
+    margin: 40px 0;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+
+.container img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.texto {
+    width: 50%;                                                                                                                                                                                                                                              
+    padding: 20px;
+}
+
+
+section:nth-child(odd) .container {
+    background-color: #c59bc9;
+}
+
+
+section:nth-child(even) .container {
+    background-color: #9c3766;
+}
+
+
+footer {
+    background-color: #e6b4c9;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}

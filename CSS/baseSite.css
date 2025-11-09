@@ -1,0 +1,72 @@
+@import url('base.css');
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-fundo-escuro);
+  color: var(--cor-font-clara);
+  padding: 20px 0;
+}
+
+header .empresa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+}
+
+.nav-custom {
+  background-color: var(--cor-fundo-escuro);
+}
+
+.navbar-nav {
+  gap: 50px;
+}
+
+.nav-link {
+  color: var(--cor-font-escuro);
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 8px 16px;
+  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--cor-font-clara);
+  background-color: var(--cor-destaque);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+
+main {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--cor-destaque);
+  border-radius: 8px;
+  background-color: var(--cor-fundo-claro);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 992px) {
+  .nav-link,
+  .nav-link:hover {
+    box-shadow: none;
+    transform: none;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+}

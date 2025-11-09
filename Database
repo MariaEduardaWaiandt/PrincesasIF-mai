@@ -1,0 +1,43 @@
+create database princesasif;
+use princesasif;
+drop database princesasif;
+create table cadasempresa(
+id INT(11) primary key not null,
+cnpj VARCHAR(100) not null, 
+nome VARCHAR(100) not null, 
+endereco VARCHAR(150) not null, 
+email VARCHAR(150) not null, 
+telefones VARCHAR(50) not null,
+responsaveis VARCHAR(200) not null, 
+ativ_eco VARCHAR(500) not null,
+apresentacao VARCHAR(100) not null, 
+historico VARCHAR(800) not null
+);
+
+create table cadasusuario(
+    id INT(50) primary key not null,
+    nome VARCHAR(100) NOT NULL,
+    endereco VARCHAR(150) not null, 
+    email VARCHAR(100) UNIQUE NOT NULL,
+    telefones VARCHAR(50) not null,
+    senha VARCHAR(255) NOT NULL
+);
+
+
+
+CREATE TABLE CadastroClientes (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  cpf VARCHAR(20) NOT NULL,
+  nome VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  cep VARCHAR(9) NOT NULL
+);
+select*from CadastroClientes;
+
+create table cadasproduto(
+id INT(50) primary key not null,
+nome VARCHAR(100) not null,
+descricao VARCHAR(100) not null, 
+preco int NOT NULL,
+unidade int(200) not null
+);
